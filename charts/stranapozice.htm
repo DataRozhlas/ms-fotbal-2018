@@ -59,6 +59,7 @@ Highcharts.chart('stranapozice', {
         categories: pozice
     },
     yAxis: {
+        max: 100,
         title: {
             text: 'podíl mezi všemi hráči'
         },
@@ -73,6 +74,9 @@ Highcharts.chart('stranapozice', {
     credits: {
         href: 'https://www.transfermarkt.com/wm-2018/startseite/pokalwettbewerb/WM18',
         text: 'Zdroj: transfermarkt.com'
+    },
+    tooltip: {
+        shared: true
     },
     plotOptions: {
         series: {
